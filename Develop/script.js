@@ -40,9 +40,19 @@ function generatePassword() {
   
     // error messages
     if(!passwordLength) {
-      alert("Must enter value");  
-    }
-  // prompt for character types
+      alert("Please enter a value.");  
+
+    } else if (passwordLength < 8 || passwordLength >128) {
+      passwordLength = prompt("Choose an integer between 8 and 128");
+    } else { 
+      // prompts for character type
+      confirmLower = confirm("Will this contain lower case letters?");
+      confirmUpper = confirm("Will this contain upper case letters?");
+      confirmNumber = confirm("Will this contain numbers?");
+      confirmSpecial = confirm("Will this contain special characters?");
+  
+    };
+// prompt for character types
   // generate password
   // display password
 }
