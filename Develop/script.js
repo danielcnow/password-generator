@@ -115,25 +115,21 @@ function generatePassword() {
           if (confirmLower) {
             omegaArray = lowerCase
           }
-          console.log(omegaArray)
       confirmUpper = confirm("Will this contain upper case letters?");
         userChoices.push(confirmUpper);
         if (confirmUpper) {
           omegaArray = omegaArray.concat(upperCase)
         }
-        console.log(omegaArray)
       confirmNumber = confirm("Will this contain numbers?");
         userChoices.push(confirmNumber);
         if (confirmNumber) {
           omegaArray = omegaArray.concat(numbers)
         }
-        console.log(omegaArray)
       confirmSpecial = confirm("Will this contain special characters?");
         userChoices.push(confirmSpecial);
         if (confirmSpecial) {
           omegaArray = omegaArray.concat(special)
         }
-        console.log(omegaArray)
     };
   
   // random password loop
